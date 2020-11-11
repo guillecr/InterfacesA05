@@ -39,6 +39,12 @@ public class Ejercicio1 extends javax.swing.JFrame {
         return nombres_al;
     }
     
+    public void limpiar(){
+        for(int j=dtmP.getRowCount()-1;j>=0;j--){
+            dtmP.removeRow(j);
+        }   
+    }
+    
     public void llenar(List<String> lista){
         String[] dato = {"","",""};
         for(int i=0;i<lista.size();i++){
@@ -52,6 +58,7 @@ public class Ejercicio1 extends javax.swing.JFrame {
     
     public void principal(){
         List<String> nombres_al = getLista();
+        limpiar();
         llenar(nombres_al);
         
     }

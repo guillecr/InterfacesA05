@@ -68,6 +68,7 @@ public class Ejercicio2 extends javax.swing.JFrame {
     }
     
     public void principal(){
+        limpiar();
         List<Doctore> doctores_al = getLista();
         llenar(doctores_al);
     }
